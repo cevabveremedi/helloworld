@@ -182,6 +182,7 @@ node * invertList(node **head) // TODO
 
 node * rmFromList(node *head, int max)
 {
+    node *junk = NULL;
     node *p = head;
     int rm;
     do
@@ -193,7 +194,10 @@ node * rmFromList(node *head, int max)
     if(rm == 1)
     {
         printf("\n%i\n", head->data);
+        junk = head;
         head = head->next;
+        free(junk);
+        printf("Element removed from the list!\nCommand: ");
         return head;
     }
 
@@ -203,11 +207,13 @@ node * rmFromList(node *head, int max)
     }
     node *prev_element = p;
     node *current = p->next;
+    junk = current;
     node *next_element = current->next;
 
     printf("\n%i\n", current->data);
     prev_element->next = next_element;
 
+    free(junk);
     printf("Element removed from the list!\nCommand: ");
     return head;
 }
