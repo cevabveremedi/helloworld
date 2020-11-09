@@ -37,7 +37,7 @@ int main(void)
     printf("Reversed: ");
     printList(HEAD);
 
-    freeList(HEAD);
+    freeList(HEAD); //make sure no memory leaks.
     return 0;
 }
 
