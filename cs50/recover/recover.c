@@ -33,31 +33,31 @@ int main(int argc, char *argv[])
     FILE* outfile;
     while(fread(Buffer, Block_size, 1, infile))
     {
-     if (jpg_start(Buffer))
-     {
-         if(!first_jpg)
-         {
-             first_jpg = true;
-         }
-         else
-         {
-             fclose(outfile);
-         }
-         char file_name[File_name_size];
-         sprintf (file_name, "%03i.jpg", file_count);
-         file_count++;
+        if (jpg_start(Buffer))
+        {
+            if(!first_jpg)
+            {
+                first_jpg = true;
+            }
+            else
+            {
+                fclose(outfile);
+            }
+            char file_name[File_name_size];
+            sprintf (file_name, "%03i.jpg", file_count);
+            file_count++;
 
-         outfile = fopen(file_name, "w");
+            outfile = fopen(file_name, "w");
             if (outfile== NULL)
             {
                 return 1;
             }
-        fwrite (Buffer, Block_size, 1, outfile);
-     }
-     else if (first_jpg)
-     {
-         fwrite(Buffer, Block_size, 1, outfile);
-     }
+            fwrite (Buffer, Block_size, 1, outfile);
+        }
+        else if (first_jpg)
+        {
+            fwrite(Buffer, Block_size, 1, outfile);
+        }
     }
     fclose(infile);
     fclose(outfile);
