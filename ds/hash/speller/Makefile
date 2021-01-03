@@ -3,7 +3,12 @@
 #	clang -ggdb3 -O0 -Qunused-arguments -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow -c -o dictionary.o dictionary.c
 #	clang -ggdb3 -O0 -Qunused-arguments -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow -o speller speller.o dictionary.o -lm
 
-CC = mansfield.txt
+#CC = mansfield.txt
+#CC = bible.txt
+#CC = koran.txt
+#CC = tolstoy.txt 
+CC = lalaland.txt 
+#CC = shakespeare.txt
 
 default: build run
 

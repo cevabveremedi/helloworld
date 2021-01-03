@@ -18,7 +18,7 @@ node;
 
 // Number of buckets in hash table
 //const unsigned int N = 9000;
-#define N 46*'z'
+#define N 10000
 
 // Hash table
 node *table[N];
@@ -52,17 +52,26 @@ bool check(const char *word)
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
-    long sum = 0;
-    for(int i = 0; word[i] != '\0'; i++)
+    unsigned int hash = 0;
+    for (int i = 0, n = strlen(word); i < n; i++)
     {
-        sum += word[i];
+        hash = (hash << 2) ^ word[i];
     }
-    return (sum % N);
+    return hash % N;
+}
+
+void setNull(void)
+{
+    for(int i = 0; i<N; i++)
+    {
+        table[i] = NULL;
+    }
 }
 
 // Loads dictionary into memory, returning true if successful else false
 bool load(const char *dictionary)
 {
+    setNull(); //sets elements of the table to NULL
     FILE* file = fopen(dictionary, "r");
     if(!file) return false;
 
@@ -118,7 +127,7 @@ bool unload(void)
     }
     if(deletedNodes != totalNodes)
     {
-        printf("total: %d\ndeleted: %d\n", totalNodes, deletedNodes);
+        printf("Error!\ntotal: %d\t\tdeleted: %d\n", totalNodes, deletedNodes);
         return false;
     }
     return true;
