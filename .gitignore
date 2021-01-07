@@ -3,3 +3,4 @@ dir_to_ignore/test
 test/
 vcpkg/
 .vscode/
+__pycache__/
