@@ -14,7 +14,7 @@ def main():
     while lives != 0:
         if completed(selectedWord, wordsFound) == True:
             print("Congratulations!")
-            return;
+            return
         else:
             guess = input("\nPick a char: ".lower())
             if guess == '!':
