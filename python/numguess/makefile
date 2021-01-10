@@ -1,4 +1,4 @@
 default: build
 
 build:
-	python3 test.py
+	python3 guess.py
