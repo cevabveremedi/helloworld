@@ -2,7 +2,7 @@ import time
 import copy
 import numpy as np
 import random
-from os import system, name 
+from os import system, name
 
 boardGrid = 3
 

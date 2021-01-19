@@ -1,6 +1,12 @@
+# Now I can use google translate from the command line
+# and save 10 seconds everytime I need to check some 
+# word online because of this little program.
+
 from googletrans import Translator
 from sys import argv
+from os import system, name 
 
+_ = system('clear')
 if len(argv) == 1:
     src = 'en'
     dest = 'tr'
