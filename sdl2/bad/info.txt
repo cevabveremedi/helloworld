@@ -1,0 +1,10 @@
+--> Tutorial <--
+
+bad01 = Reading the mouse
+bad02 = Angles and rotation
+bad03 = Mouse buttons and shooting
+bad04 = Battling enemies
+bad05 = Scrolling the arena
+bad06 = Finishing touches
+
+source: https://www.parallelrealities.co.uk/tutorials/#bad

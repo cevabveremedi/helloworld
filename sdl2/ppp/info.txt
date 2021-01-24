@@ -1,0 +1,10 @@
+--> tutorial <--
+
+ppp01 = Loading and displaying the map
+ppp02 = Scrolling the map
+ppp03 = Controlling the character
+ppp04 = Interacting with entities
+ppp05 = Moving platforms
+ppp06 = Finishing touches
+
+source: https://www.parallelrealities.co.uk/tutorials/#ppp

@@ -1,0 +1,19 @@
+--> Tutorial <--
+
+shooter01 = Opening a window
+shooter02 = Drawing the player
+shooter03 = Moving the player
+shooter04 = Firing
+shooter05 = Refactoring
+shooter06 = Enemies
+shooter07 = Shooting enemies
+shooter08 = Enemies fighting back!
+shooter09 = Effects and background graphics
+shooter10 = Sound and music
+shooter11 = Bitmap fonts and scoring
+shooter12 = Score pods
+shooter13 = Highscore table (Part 1)
+shooter14 = Highscore table (Part 2)
+shooter15 = Title screen and finishing touches
+
+Source: https://www.parallelrealities.co.uk/tutorials/#shooter
