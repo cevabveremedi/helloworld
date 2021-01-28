@@ -1,0 +1,88 @@
+* {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace
+}
+
+body{
+    background-color: rgb(10,30,50);
+}
+
+header{
+    border: solid black;
+    border-radius: 10px;
+    background-color:white;
+    height: 100px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.Status{
+    background-color: white;
+    margin: auto;
+    width: 1000;
+    border: solid black;
+    border-radius: 6px;
+}
+
+.scoreboard{
+    border: 5px solid black;
+    border-radius: 18px;
+    background-color: rgb(0, 128, 96);
+    width: 300px;
+    margin: 25px auto;
+    margin-bottom: 20;
+    position: relative;
+}
+
+.score{
+    background: red;
+    font-size: 25px;
+}
+
+#user{
+    position: absolute;
+    top: 8;
+    left: -25;
+}
+
+#comp{
+    position: absolute;
+    top: 8;
+    right: -25;
+}
+
+.buttons{
+    text-align: center;
+    margin-top: 35px;
+}
+
+.button{
+    display: inline-block;
+    background-color: rgb(255, 251, 0);
+    border: 10px solid black;
+    border-radius: 50%;
+    margin: auto 30px;
+    transition: all 0.5 ease;
+}
+
+.button:hover{
+    background-color: rgb(30,50,70);
+    cursor: pointer;
+}
+
+.buttonWin{
+    border: 10px solid green;
+    background-color: rgb(30,50,70);
+}
+
+.buttonLose{
+    border: 10px solid red;
+    background-color: rgb(30,50,70);
+}
+
+.buttonTie{
+    border: 10px solid gray;
+    background-color: rgb(30,50,70);
+}
