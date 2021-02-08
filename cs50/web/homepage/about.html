@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
+        crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" 
+        crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="icon" href="https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/bonfire.png">
+        <title>Burial Gifts</title>
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="49px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lords.html">Lords of Cinder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gifts.html">Gifts</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About...</a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="form-inline" onsubmit="search()">
+                            <input id="searchBox" class="form-control" type="text" placeholder="Search" aria-label="Search" autocomplete="off" autofocus>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+
+        <!--Picture-->
+        <picture>
+			<source srcset="img/anor_londo.jpg" media="(min-width: 300px)">
+			<img class="bg" srcset="" alt="">
+		</picture>
+
+        <!--Text block-->
+        <div id="textBlock" style="width: 65%; margin-right:35%;">
+            <!--About the Game-->
+            <div>
+                <p><span class="tab"></span>Dark Souls III is an action role-playing game set in a third-person perspective. According to director Hidetaka Miyazaki, the game's gameplay design "follows closely from Dark Souls II". Players are equipped with a variety of weapons including shortbows, explosives like fire bombs, greatswords and dual-wielding swords to fight against enemies, and shields that can be used to deflect an enemies' attack and protect the player from suffering damage. In addition, attacks can be evaded through dodge-rolling. Bonfires, which serve as checkpoints, also return from previous installments.</p>
+                <br>
+                <p><span class="tab"></span>Ashes, according to Miyazaki, will play an important role in the game. Magic is also featured in the game. Each attack has two different styles. One of them is standard attack, while another provides power-ups to players, and is slightly more powerful. When performing miracles and spells, the players' magic points are consumed and decreased. In order to refilled these points, they need to consume Ash Estus Flask. There are two different Estus Flasks in the game. One of them can help refill magic points, while another refill hit points. Combat and movements were made faster and more fluid in Dark Souls III. Several players' movements, such as backstepping and swinging heavy weapons, can be performed more rapidly, allowing players to deal more damage in a short period of time.</p> 
+                <br>
+                <p><span class="tab"></span>Throughout the game, players encounter different types of enemies, each with different behaviors. Some of them change their combat pattern during battles. New combat features are introduced in Dark Souls III, including "Ready Stance", which are special abilities for players that allow them to deal much more damage to enemies than ordinary attacks are capable of. Small gravestones are also introduced. These gravestones light up when interacted with and not only serve as players' torches, but also provide additional lore to the game.</p>
+                <br>
+                <p><span class="tab"></span>The game puts more focus on role-playing, in which the character builder is expanded and weapons are improved to provide more tactical options to players. The game features fewer maps than its predecessor Dark Souls II, but levels were interconnected and were made larger, which encourages exploration. The agility stat from Dark Souls II was removed from Dark Souls III. The game also features multiplayer elements, like the previous games in the series.</p>
+            </div>
+        </div>
+
+        <!--- Footer -->
+        <footer>
+            <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="col-12">
+                    <h2>Social</h2>
+                </div>
+                <div class="col-12 social padding">
+                    <a href="https://store.steampowered.com/app/374320/DARK_SOULS_III/"><i class="fab fa-steam"></i></a>
+                    <a href="https://www.facebook.com/fromsoftware.jp/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/fromsoftware_pr"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/user/FromSoftwareInc/"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="col-12">
+                    <hr style="border: solid white 3px">
+                    <h5>&copy; www.fromsoftware.jp</h5>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <script src="efx.js"></script>
+    </body>
+</html>

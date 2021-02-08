@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
+        crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" 
+        crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="icon" href="https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/bonfire.png">
+        <title>Burial Gifts</title>
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="49px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lords.html">Lords of Cinder</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Gifts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About...</a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="form-inline" onsubmit="search()">
+                            <input id="searchBox" class="form-control" type="text" placeholder="Search" aria-label="Search" autocomplete="off" autofocus>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+
+        <!--Picture-->
+        <picture>
+			<source srcset="img/wallpaper_boreal.jpg" media="(min-width: 300px)">
+			<img class="bg" srcset="" alt="">
+		</picture>
+
+        <!--Text block-->
+        <div id="textBlock" style="width: 80%; margin-left:10%; margin-right:10%;">
+            <!--Description-->
+            <div class="opacity">
+                <p class="opening"><span class="tab"></span>Burial Gifts return in Dark Souls 3, just like the previous Souls games. One can be chosen by the player at the beginning of the game as sort of an extra bonus to help them get going. There are 9 gifts to choose from in total. All of the starting gift items are obtainable in-game, meaning these gifts provide a temporary advantage. A gift can only be chosen at the start of the first NG. The player may also opt to take none of these gifts during character creation.</p>
+            </div>
+
+            <!--- Title -->
+            <div class="container-fluid padding">
+                <div class="row welcome text-center">
+                    <hr class="centerHR" style="border-color: white;">
+                    <div class="col-12">
+                        <h1 class="display-4">Burial Gifts</h1>
+                    </div>
+                    <hr class="centerHR" style="border-color: white;">
+                </div>
+            </div>
+                
+            <!--- Cards -->
+            <div class="container-fluid padding">
+
+                <!--First Row-->
+                <div class="row padding">
+                    <!--1st item-->
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img class="card-img-top" src="img/gifts/life_ring-icon.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Life Ring</h4>
+                                <p>Ring set with a small red jewel. Raises Maximum HP.</p>
+                                <a href="https://darksouls3.wiki.fextralife.com/Life+Ring" class="btn btn-outline-secondary">More...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--2nd item-->
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img class="card-img-top" src="img/gifts/divine_blessing.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Divine Blessing</h4>
+                                <p>Warm, blessed holy water. Fully restores HP and cures ailments.</p>
+                                <a href="https://darksouls3.wiki.fextralife.com/Divine+Blessing" class="btn btn-outline-secondary">More...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--3rd item-->
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img class="card-img-top" src="img/gifts/hidden_blessings-icon.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Hidden Blessing</h4>
+                                <p>Pure, blessed holy water. Fully restores FP.</p>
+                                <a href="https://darksouls3.wiki.fextralife.com/Hidden+Blessing" class="btn btn-outline-secondary">More...</a>
+                            </div>
+                        </div>
+                    </div>
+                <!--End First Row-->
+                </div>
+
+                <!--Second Row-->
+                <div class="row padding">
+                    <!--4th item-->
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img class="card-img-top" src="img/gifts/black_firebomb.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Black Firebomb (x5)</h4>
+                                <p>Firebomb charged with a special block. An uncouth gift for the departed.</p>
+                                <a href="https://darksouls3.wiki.fextralife.com/Black+Firebomb" class="btn btn-outline-secondary">More...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--5th item-->
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img class="card-img-top" src="img/gifts/fire_gem-icon.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Fire Gem</h4>
+                                <p>Material used to upgrade fire weapons. More appropriate for a warrior than pretty trinkets.</p>
+                                <a href="https://darksouls3.wiki.fextralife.com/Fire+Gem" class="btn btn-outline-secondary">More...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--6th item-->
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img class="card-img-top" src="img/gifts/soul_of_a_nameless_soldier.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Sovereignless Soul</h4>
+                                <p>The sovereignless soul of one who slept beside you. Use to acquire many souls.</p>
+                                <a href="https://darksouls3.wiki.fextralife.com/Sovereignless+Soul" class="btn btn-outline-secondary">More...</a>
+                            </div>
+                        </div>
+                    </div>
+                <!--End Second Row-->
+                </div>
+
+                <!--Third Row-->
+                <div class="row padding">
+                    <!--7th item-->
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img class="card-img-top" src="img/gifts/rusted_gold_coin.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Gold Coin (x7)</h4>
+                                <p>Burial item for good fortune after death. Greatly increases item discovery for a short while.</p>
+                                <a href="https://darksouls3.wiki.fextralife.com/Rusted+Gold+Coin" class="btn btn-outline-secondary">More...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--8th item-->
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img class="card-img-top" src="img/gifts/cracked_red_orb.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Cracked Red Eye Orb (x4)</h4>
+                                <p>Online play item. One use only. Become a dark spirit and invade another world.</p>
+                                <a href="https://darksouls3.wiki.fextralife.com/Cracked+Red+Eye+Orb" class="btn btn-outline-secondary">More...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--9th item-->
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img class="card-img-top" src="img/gifts/young_white_branch-icon.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Young White Branch</h4>
+                                <p>Branch of a young white birch, perhaps an offering of peace. Can be used to blend into environment, but only once.</p>
+                                <a href="https://darksouls3.wiki.fextralife.com/Young+White+Branch" class="btn btn-outline-secondary">More...</a>
+                            </div>
+                        </div>
+                    </div>
+                <!--End Third Row-->
+                </div>
+
+            <!--End Cards-->
+            </div>
+
+            <br>
+            
+            <!--Notes For Beginners-->
+            <hr class="leftHR">
+            <h3 class="opacity">
+                <img src="https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/bonfire.png">
+                <b class="blockTitle">Notes for Players choosing Gift</b>
+            </h3>
+            <hr class="leftHR">
+
+            <div class="opacity">
+                <p><span class="tab"></span>For PvE the best options are the Life Ring, the Fire Gem or the Sovereignless Soul.</p>
+                <br>
+                <p><span class="tab"></span>Everything else is either easily obtainable fairly early on, plentiful later in the game, or nearly useless until it can be obtained mid or late game.</p>
+                <br>
+                <p><span class="tab"></span>The Fire Gem seems tempting, and rightfuly so, it's definitely an excellent choice for people who would like to focus on survival or magic stats, as the fire gem offers good damage but no scaling. Surprising amount of early found weapons scale well into the late game, for example Knight's starting long sword. Even if you go the damage fist path for at least few hours you won't match damage offered by this infusion. Otherwise firegem infusion is obtainable in the early mid game.</p>
+                <br>
+                <p><span class="tab"></span>Early on, it is much more helpful to have the little buffer of health (especially versus Iudex Gundyr) or an extra level or two once you reach Firelink Shrine than having an extra Young White Branch, Rusted Gold Coin, or even a Divine Blessing.</p>
+                <br>
+                <p><span class="tab"></span>The Young White Branch grants immediate friendship with the Giant Archer of the Undead Settlement, removing the need of talking the archer.</p>
+                <br>
+                <p><span class="tab"></span>The "Sovereignless Soul" shows up as the "Soul of a Nameless Soldier" if chosen. Both will grant 2,000 souls if used.</p>
+            </div>
+
+        </div>
+    <script src="efx.js"></script>
+    </body>
+</html>
