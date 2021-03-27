@@ -17,8 +17,7 @@ typedef struct node
 node;
 
 // Number of buckets in hash table
-//const unsigned int N = 9000;
-#define N 46*'z'
+#define N 50000*'z'
 
 // Hash table
 node *table[N];
@@ -52,12 +51,17 @@ bool check(const char *word)
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
-    long sum = 0;
-    for(int i = 0; word[i] != '\0'; i++)
-    {
-        sum += word[i];
+    int hash = 401;
+    int c;
+
+    while (*word != '\0') {
+        hash = ((hash << 4) + (int)(*word)) % N;
+        word++;
     }
-    return (sum % N);
+
+    return hash % N;
+
+    //source: https://cs50.stackexchange.com/questions/38753/cs50-good-hash-function-for-pset5-speller
 }
 
 // Loads dictionary into memory, returning true if successful else false
